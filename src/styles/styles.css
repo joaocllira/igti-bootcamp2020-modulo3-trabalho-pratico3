@@ -1,0 +1,15 @@
+.container {
+    margin-top: 100px !important;
+}
+
+.row {
+    margin-bottom: 50px !important;
+}
+
+.sal-bar {
+    height: 20px;
+}
+
+.sal-liquido {
+    background-color: #16a085;
+}
