@@ -7,9 +7,18 @@
 }
 
 .sal-bar {
+    display: inline-block;
     height: 20px;
 }
 
 .sal-liquido {
-    background-color: #16a085;
+    background-color: #16a085 !important;
+}
+
+.disc-inss {
+    background-color: #e67e22 !important;
+}
+
+.disc-irpf {
+    background-color: #c0392b !important; 
 }

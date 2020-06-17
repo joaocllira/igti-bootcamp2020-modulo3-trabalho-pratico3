@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import INSSandIRPFValues from './components/INSSandIRPFValues';
+import SalarioLiquido from './components/SalarioLiquido';
 import { calculateSalaryFrom } from './calcs/salary';
 import './styles/styles.css';
 
@@ -27,18 +28,7 @@ const App = () => {
 
             <INSSandIRPFValues calculatedValues={calculatedValues} />
 
-            <div class="row">
-                <div class="col s3">
-                    <input id="salario_liquido" type="text" class="validate" />
-                    <label class="active" for="salario_liquido">Salário líquido</label>
-                </div>
-                <div class="col s8">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 sal-bar sal-liquido">
-                </div>
-            </div>
+            <SalarioLiquido baseSalary={baseSalary} calculatedValues={calculatedValues} />
         </div>
     );
 }
