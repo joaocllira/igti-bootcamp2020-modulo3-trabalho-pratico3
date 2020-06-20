@@ -1,15 +1,15 @@
 import React from 'react';
+import { formatNumber } from '../calcs/salary';
 
 const SalarioLiquido = (props) => {
     let { calculatedValues, baseSalary } = props;
 
-
-
     return (
         <>
             <div class="row">
-                <div class="col s3">
-                    <input id="salario_liquido" type="text" class="validate" value={calculatedValues.netSalary} />
+                <div class="input-field col s3">
+                    <input id="salario_liquido" type="text" class="validate value-field sal-liq-field" 
+                        value={`${formatNumber(calculatedValues.netSalary)} (${(calculatedValues.netSalary / (baseSalary || 1) * 100).toFixed(2)}%)`} />
                     <label class="active" for="salario_liquido">Salário líquido</label>
                 </div>
                 <div class="col s8">

@@ -22,3 +22,19 @@
 .disc-irpf {
     background-color: #c0392b !important; 
 }
+
+.value-field {
+    font-weight: bold;
+}
+
+.inss-field {
+    color: #e67e22;
+}
+
+.irpf-field {
+    color: #c0392b
+}
+
+.sal-liq-field {
+    color: #16a085
+}
